@@ -1,4 +1,5 @@
 import mongoose from 'mongoose'
+
 const db = mongoose.connection
 // Prep for Mongoose 7 and surpress deprecation warnings
 mongoose.set('strictQuery', false)
