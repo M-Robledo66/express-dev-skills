@@ -1,5 +1,5 @@
 import mongoose from "mongoose"
-import { skills } from "../data/skills-data"
+// import { skills } from "../data/skills-data.js"
 
 const Schema = mongoose.Schema 
 

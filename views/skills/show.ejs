@@ -7,10 +7,17 @@
     <title>Document</title>
 </head>
 <body>
-    <h1>Todos</h1>
-    <h2>Todo #<%= todo._id %></h2>
-    <h3><%= todo.text %></h3>
-    <p>Complete: <%= todo.done ? 'Yes' : 'No' %></p>
+    <h1>Skills</h1>
+    <h2>Skill #<%= skill._id %></h2>
+    <form 
+    action="/skills/<%= skill._id %>?_method=DELETE"
+    class="delete-form"
+    method="POST"
+  >
+    <button type="submit">X</button>
+  </form>
+    <h3><%= skill.text %></h3>
+    <p>Complete: <%= skill.done ? 'Yes' : 'No' %></p>
       <a href="/skills">Go back</a>
 </body>
 </html>

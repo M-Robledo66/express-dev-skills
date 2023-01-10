@@ -12,6 +12,9 @@ router.get('/:id', skillsCtrl.show)
 
 router.post('/', skillsCtrl.create)
 
+// new route below
+router.delete('/:id', skillsCtrl.delete)
+
 export {
   router
 }
