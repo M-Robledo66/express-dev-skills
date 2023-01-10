@@ -36,6 +36,14 @@ app.use(
 app.use('/', indexRouter)
 app.use('/skills', skillsRouter)
 
+app.use(function(req, res, next) {
+  console.log('Hello SEI!')
+  req.time = new Date().toLocaleTimeString()
+  next()
+})
+
+app.use(express.urlencoded({ extended: false }))
+
 // catch 404 and forward to error handler
 app.use(function (req, res, next) {
   next(createError(404))
